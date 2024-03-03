@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #030303;
+    color: rgb(6, 187, 187);
+    text-align: center;
+    height: 6px;
+}
+
+nav.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.full-width-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+nav.top img {
+    margin-right: 200px;
+    width: 200px;
+    /* Default margin between image and text */
+}
+
+nav.top ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav.top li {
+    margin-right: 15px; /* Adjust the spacing between list items as needed */
+}
+
+nav.top a {
+    color: #030303;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+nav.top a:hover {
+    background: #0f242b; /* Change background color on hover */
+}
+
+@media (max-width: 768px) {
+    nav.top img {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for smaller screens */
+    }
+
+    nav.top ul {
+        flex-direction: column; /* Stack list items vertically on small screens */
+        align-items: center; /* Center the list items vertically on small screens */
+    }
+
+    nav.top li {
+        margin-right: 0; /* Remove right margin for stacked list items */
+        margin-bottom: 10px; /* Add bottom margin for stacked list items */
+    }
+}
+
+.p_offer {
+    display: inline-block;
+    margin-right: 20px;
+    text-anchor: end;
+    font-weight: bold;
+}
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+form input {
+    margin-right: -5px; /* Remove space between input fields */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #030303; /* Add border to input fields */
+    border-radius: 5px; /* Add border radius to input fields */
+}
+
+form button {
+    margin-left: -5px; /* Remove space between button and input fields */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove border from button */
+    background-color: #237297; /* Change button background color */
+    color: white; /* Change button text color */
+    font-weight: bold; /* Make button text bold */
+    border-radius: 5px; /* Add border radius to button */
+    cursor: pointer; /* Add cursor pointer to button */
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(4, 192, 183);
+    border-radius: 5px;
+    padding: 20px;
+}
+.seamoss_advert{
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+.product-scroll-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    /* Removed initial width and max-width */
+    /* Added transition for smoother appearance */
+    transition: transform 0.5s ease;
+    width: 120%;
+
+}
+.product-container.appear {
+    transform: translateX(0);
+}
+
+.product-block {
+    position: relative;
+    width: 300px; /* Set the initial width of the product block */
+    max-width: calc(100% - 20px); /* Adjusted for gap */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.product-image img {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.sold-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 217, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+
+.product-block:hover .sold-overlay {
+    visibility: visible;
+}
+
+.product-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-details h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .product-block {
+        width: 80vw; /* Adjust the width for smaller screens */
+        max-width: 80vw; /* Adjust the max-width for smaller screens */
+    }
+}
+
+.popular-container {
+    overflow-x: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    width: auto;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: #f9f9f9; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.product-block {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff; /* White background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.product-block:hover {
+    transform: translateY(-5px); /* Move the block up slightly on hover */
+}
+
+.popular-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(196, 138, 138, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+
+.product-block:hover .popular-overlay {
+    visibility: visible;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.product-details h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIME ORGANICS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+
+</head>
+<body>
+    <header class="top" >FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
+    <nav class="top">
+            <ul class="top">
+                <img  src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">
+                <li><a href="home">SHOP</a></li>
+                <li><a href="sales">SALES</a></li>
+                <li><a href="mission">MISSION</a></li>
+                <li><a href="blog">BLOG</a></li>
+                <li><a href="login">LOGIN</a></li>
+            </ul>
+    </nav>
+    <div class="slideshow-container">
+        <img class="full-width-img fade" src="{{ url_for('static', filename='images/1.jpeg') }}" alt="Image">
+        <img class="full-width-img fade" src="{{ url_for('static', filename='images/17.jpeg') }}" alt="Image">
+        <img class="full-width-img fade" src="{{ url_for('static', filename='images/20.jpeg') }}" alt="Image">
+        <img class="full-width-img fade" src="{{ url_for('static', filename='images/18.jpeg') }}" alt="Image">
+    </div>
+
+{% block content%}
+
+{% endblock %}
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
