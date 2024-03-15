@@ -1,6 +1,42 @@
-{% extends "base.html" %}
-{% block content%}
-<p>
-hello world
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIME ORGANICS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+
+</head>
+<body>
+<header class="top">FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
+<nav class="top">
+    <ul class="top">
+        <img src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">
+        <li><a href="home">SHOP</a></li>
+        <li><a href="sales">SALES</a></li>
+        <li><a href="mission">MISSION</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="login">LOGIN</a></li>
+    </ul>
+</nav>
+{% block content %}
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="text" id="number" name="number" placeholder="number" required>
+                <input type="text" id="amount" name="amount" placeholder="amount" required>
+                <button class="submit">Get Started</button>
+                <p>Don't have an account? <a href="login/register">Create Account</a></p>
+            </div>
+        </form>
+
+    </div>
+
+
 {% endblock %}
+
+
+</body>
+</html>

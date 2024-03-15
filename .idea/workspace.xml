@@ -4,49 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8276d86-cdd2-4ff6-ab99-bdbe1730be6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/primeorganics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pdf/prime organics presentation (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/14.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/18.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/19.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/20.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/21.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/22.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/23.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/24.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mission.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sale.html" afterDir="false" />
+    <list default="true" id="e8276d86-cdd2-4ff6-ab99-bdbe1730be6d" name="Changes" comment="initial changes">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mpesaapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/pdf/prime organics presentation (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mission.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mission.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sale.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +32,9 @@
       <list>
         <option value="Flask Main" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -98,37 +73,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Flask server.primeorganics.executor": "Run",
-    "JavaScript Debug.base.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nyutu/OneDrive/Documents/PRIMEORGANICS/primeorganics/templates",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "reference.idesettings.quicklists",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask server.primeorganics.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.base.html.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nyutu/OneDrive/Documents/PRIMEORGANICS/primeorganics/templates/pages&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myCodeCompletionOption" value="Runtime" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\templates\pages" />
+      <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\pages" />
       <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\templates" />
       <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\media\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\templates" />
+      <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\templates\pages" />
       <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\static\js" />
       <recent name="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\static" />
     </key>
@@ -139,12 +122,13 @@
     </configuration>
     <configuration name="primeorganics" type="Python.FlaskServer">
       <module name="primeorganics" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="target" value="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\app.py" />
       <option name="targetType" value="PATH" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\nyutu\OneDrive\Documents\PRIMEORGANICS\primeorganics\.venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.7 (primeorganics)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -153,6 +137,10 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.primeorganics" />
+      <item itemvalue="JavaScript Debug.base.html" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.base.html" />
@@ -162,7 +150,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -181,17 +169,48 @@
       <workItem from="1709213939387" duration="7816000" />
       <workItem from="1709303110954" duration="9137000" />
       <workItem from="1709359282609" duration="14485000" />
-      <workItem from="1709441888007" duration="1280000" />
+      <workItem from="1709441888007" duration="3058000" />
+      <workItem from="1709479461580" duration="182000" />
+      <workItem from="1709497440355" duration="12254000" />
+      <workItem from="1709544958893" duration="3506000" />
+      <workItem from="1709786837343" duration="3147000" />
+      <workItem from="1709873606920" duration="2811000" />
+      <workItem from="1710146050448" duration="985000" />
+      <workItem from="1710186725481" duration="841000" />
     </task>
+    <task id="LOCAL-00001" summary="initial changes">
+      <option name="closed" value="true" />
+      <created>1709443293808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709443293808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/primeorganics$primeorganics.coverage" NAME="primeorganics Coverage Results" MODIFIED="1709383194811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/primeorganics$api.coverage" NAME="api Coverage Results" MODIFIED="1709497981739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mpesaapi" />
+    <SUITE FILE_PATH="coverage/primeorganics$primeorganics.coverage" NAME="primeorganics Coverage Results" MODIFIED="1709788518511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/primeorganics$app.coverage" NAME="app Coverage Results" MODIFIED="1709500842160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

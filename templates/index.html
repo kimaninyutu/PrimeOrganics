@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block content%}
-    <div class="container">
+{% block content %}
+    <div class="header_container">
         <p class="p_offer">GET 10% OFF FOR YOUR FIRST PURCHASE <br>Receive Latest News and Promotion</p>
-        <form action="/" method="post">
+        <form action="/static" method="post">
             <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <button class="submit">Get Started</button>
@@ -95,8 +95,8 @@
                     <p class="price">$19.99</p>
                 </div>
             </div>
-            
-            
+
+
             <!-- Add more product blocks as needed -->
         </div>
     </div>
@@ -107,31 +107,28 @@
     </div>
     <div class="popular-container">
         <div class="product-block">
-                <div class="product-image">
-                    <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
-                    <div class="popular-overlay"></div>
-                </div>
-                <div class="product-details">
-                    <h3>RED MACA POWDER</h3>
-                </div>
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
+                <div class="popular-overlay"></div>
+            </div>
+            <div class="product-details">
+                <h3>RED MACA POWDER</h3>
+            </div>
         </div>
         <div class="product-block">
-                <div class="product-image">
-                    <img src="{{ url_for('static', filename='images/23.jpeg') }}" alt="Image">
-                    <div class="popular-overlay"></div>
-                </div>
-                <div class="product-details">
-                    <h3>SEA MOSS GEL</h3>
-                </div>
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/23.jpeg') }}" alt="Image">
+                <div class="popular-overlay"></div>
+            </div>
+            <div class="product-details">
+                <h3>SEA MOSS GEL</h3>
+            </div>
         </div>
 
 
-        </div>
+    </div>
 
-    <script src="/static/js/script.js"></script>
-
-    
-
+    <script src="/js/script.js"></script>
 
 
 {% endblock %}

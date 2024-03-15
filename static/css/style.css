@@ -20,6 +20,7 @@ nav.top {
     align-items: center;
     padding: 20px;
 }
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -38,8 +39,12 @@ nav.top {
 }
 
 @keyframes fade {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -123,7 +128,8 @@ form button {
     border-radius: 5px;
     padding: 20px;
 }
-.seamoss_advert{
+
+.seamoss_advert {
     align-content: center;
     align-items: center;
     font-weight: bold;
@@ -134,6 +140,7 @@ form button {
     margin-bottom: 20px;
 
 }
+
 .product-scroll-container {
     overflow-x: auto;
     padding: 20px;
@@ -150,6 +157,7 @@ form button {
     width: 120%;
 
 }
+
 .product-container.appear {
     transform: translateX(0);
 }
@@ -287,3 +295,88 @@ form button {
 }
 
 
+.account-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    border: #9ac1eb;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    border-radius: 0; /* Remove border radius */
+    outline: none; /* Remove outline */
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
