@@ -1,0 +1,134 @@
+{% extends "home.html" %}
+{% block content %}
+    <div class="header_container">
+        <p class="p_offer">GET 10% OFF FOR YOUR FIRST PURCHASE <br>Receive Latest News and Promotion</p>
+        <form action="/static" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <button class="submit">Get Started</button>
+        </form>
+    </div>
+    <div>
+        <P class="seamoss_advert">
+            Best Selling SEA MOSS GEL
+        </P>
+    </div>
+    <div class="product-scroll-container">
+        <div class="product-container">
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/2.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/5.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/6.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/7.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/8.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/9.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-block">
+                <div class="product-image">
+                    <img src="{{ url_for('static', filename='images/11.jpeg') }}" alt="Image">
+                    <div class="sold-overlay">Sold</div>
+                </div>
+                <div class="product-details">
+                    <h3>Product Name</h3>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+
+
+            <!-- Add more product blocks as needed -->
+        </div>
+    </div>
+    <div>
+        <P class="seamoss_advert">
+            POPULAR COLLECTION
+        </P>
+    </div>
+    <div class="popular-container">
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
+                <div class="popular-overlay"></div>
+            </div>
+            <div class="product-details">
+                <h3>RED MACA POWDER</h3>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/23.jpeg') }}" alt="Image">
+                <div class="popular-overlay"></div>
+            </div>
+            <div class="product-details">
+                <h3>SEA MOSS GEL</h3>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="/js/script.js"></script>
+
+
+{% endblock %}

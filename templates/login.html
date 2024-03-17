@@ -24,13 +24,20 @@
         <h1>Login</h1>
         <form action="/login" method="post">
             <div class="input-group">
-                <input type="text" id="username" name="username" placeholder="username" required>
-                <input type="text" id="number" name="number" placeholder="number" required>
-                <input type="text" id="amount" name="amount" placeholder="amount" required>
+                <input type="email" id="email" name="email" placeholder="email" value={{ email }}>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                {% for message in get_flashed_messages() %}
+                    <div class="alert">
+                        <p>
+                            {{ message }}
+                        </p>
+                    </div>
+                {% endfor %}
                 <button class="submit">Get Started</button>
-                <p>Don't have an account? <a href="login/register">Create Account</a></p>
+                <p>Don't have an account? <a href="/signup">Create Account</a></p>
             </div>
         </form>
+
 
     </div>
 

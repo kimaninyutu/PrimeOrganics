@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIME ORGANICS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+
+</head>
+<body>
+<header class="top">FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
+<nav class="top">
+    <ul class="top">
+        <img src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">
+        <li><a href="home">SHOP</a></li>
+        <li><a href="sales">SALES</a></li>
+        <li><a href="mission">MISSION</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="login"> {{ greeting }}</a></li>
+    </ul>
+</nav>
+{% for message in get_flashed_messages() %}
+    <div class="alert">
+        <p>
+            {{ message }}
+        </p>
+    </div>
+{% endfor %}
+<div class="slideshow-container">
+    <img class="full-width-img fade" src="{{ url_for('static', filename='images/1.jpeg') }}" alt="Image">
+    <img class="full-width-img fade" src="{{ url_for('static', filename='images/17.jpeg') }}" alt="Image">
+    <img class="full-width-img fade" src="{{ url_for('static', filename='images/20.jpeg') }}" alt="Image">
+    <img class="full-width-img fade" src="{{ url_for('static', filename='images/18.jpeg') }}" alt="Image">
+</div>
+<div>
+    <P class="seamoss_advert">
+        Best Selling SEA MOSS GEL
+    </P>
+</div>
+<div class="product-scroll-container">
+    <div class="product-container">
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/2.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Sour soap Powder</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/5.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/6.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/7.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/8.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/9.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+        <div class="product-block">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/11.jpeg') }}" alt="Image">
+                <div class="sold-overlay">BUY</div>
+            </div>
+            <div class="product-details">
+                <h3>Product Name</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+        </div>
+
+
+        <!-- Add more product blocks as needed -->
+    </div>
+</div>
+<div>
+    <P class="seamoss_advert">
+        POPULAR COLLECTION
+    </P>
+</div>
+<div class="popular-container">
+    <div class="product-block">
+        <div class="product-image">
+            <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Image">
+            <div class="popular-overlay"></div>
+        </div>
+        <div class="product-details">
+            <h3>RED MACA POWDER</h3>
+        </div>
+    </div>
+    <div class="product-block">
+        <div class="product-image">
+            <img src="{{ url_for('static', filename='images/23.jpeg') }}" alt="Image">
+            <div class="popular-overlay"></div>
+        </div>
+        <div class="product-details">
+            <h3>SEA MOSS GEL</h3>
+        </div>
+    </div>
+
+
+</div>
+<script src="/static/js/script.js"></script>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="footer_container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</body>
+</html>

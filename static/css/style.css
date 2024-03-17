@@ -21,15 +21,53 @@ nav.top {
     padding: 20px;
 }
 
+.header_container {
+    text-align: center;
+    background-color: aqua;
+}
+
+.p_offer {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
     overflow: hidden;
+
 }
 
 .full-width-img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: block;
 }
 
@@ -121,6 +159,40 @@ form button {
     border-radius: 5px; /* Add border radius to button */
     cursor: pointer; /* Add cursor pointer to button */
 }
+
+
+.product-block {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff; /* White background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.product-block .product-image {
+    width: 100%; /* Ensures the image takes full width of container */
+    height: auto; /* Allows the image to resize proportionally */
+    overflow: hidden; /* Hides any overflowing parts of the image */
+}
+
+.product-block .product-image img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    max-height: 100%; /* Ensures the image fits within the container */
+}
+
+.product-block .product-details {
+    margin-top: 10px; /* Adds some space between image and details */
+}
+
+.product-block:hover {
+    transform: translateY(-5px); /* Move the block up slightly on hover */
+}
+
 
 .container {
     text-align: center;

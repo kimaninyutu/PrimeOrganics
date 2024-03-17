@@ -2,8 +2,9 @@
 {% block content %}
     <div class="account-container">
         <h1>Create Account</h1>
-        <form action="register" method="post">
+        <form action="/signup" method="post">
             <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
                 <input type="email" id="email" name="email" placeholder="email" required>
                 <input type="password" id="password" name="password" placeholder="password" required>
                 <button class="submit">Get Started</button>
