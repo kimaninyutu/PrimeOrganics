@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIME ORGANICS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+<header class="top">FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
+<nav class="top">
+    <ul class="top">
+        <img src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">
+        <li><a href="home">SHOP</a></li>
+        <li><a href="sales">SALES</a></li>
+        <li><a href="mission">MISSION</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="login"> {{ greeting }}</a></li>
+    </ul>
+</nav>
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

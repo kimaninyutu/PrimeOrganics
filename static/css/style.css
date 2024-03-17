@@ -297,9 +297,16 @@ form button {
 }
 
 @media (max-width: 768px) {
+    .product-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        table-layout: auto;
+    }
+
     .product-block {
-        width: 80vw; /* Adjust the width for smaller screens */
-        max-width: 80vw; /* Adjust the max-width for smaller screens */
+        width: 300px; /* Set the width to the original size */
+        max-width: 300px;
+        table-layout: auto; /* Set the max-width to the original size */
     }
 }
 
@@ -330,6 +337,7 @@ form button {
     padding: 20px;
     text-align: center;
     transition: transform 0.5s ease;
+
 }
 
 .product-block:hover {

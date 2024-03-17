@@ -39,7 +39,7 @@ def home():
 @app.route('/sales', methods=['GET', 'POST'])
 @login_required
 def sale():
-    return render_template('sale.html')
+    return render_template('sale.html', greeting="Hello " + session.get("name"))
 
 
 @app.route("/login", methods=['GET', 'POST'])
