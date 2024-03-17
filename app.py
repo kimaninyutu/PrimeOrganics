@@ -1,14 +1,27 @@
+import functools
 import os
 import secrets
 
-from flask import Flask, render_template, request, redirect, session, url_for, abort, flash
+from flask import Flask, render_template, request, redirect, session, url_for, flash
+from passlib.hash import pbkdf2_sha256 as pbk
 from pymongo import MongoClient
 
 app = Flask(__name__)
 app.secret_key = f"{secrets.token_urlsafe()}"
-client = MongoClient(os.environ.get("mongodb+srv://kimanihezekiah:<password>@cluster0.atrb87s.mongodb.net/"))
+client = MongoClient(os.environ.get("MONGO_URI"))
 
-users = client.get_default_database("users")
+db = client.users  # DATABASE NAME
+users = db.users  # COLLECTION NAME
+
+
+def login_required(route):
+    @functools.wraps(route)
+    def wrap(*args, **kwargs):
+        if not session.get("email"):
+            return redirect(url_for("login"))
+        return route(*args, **kwargs)
+
+    return wrap
 
 
 @app.route('/')
@@ -18,42 +31,44 @@ def index():
 
 
 @app.route("/home", methods=['GET', 'POST'])
+@login_required
 def home():
-    if not session.get("email"):
-        abort(401)
     return render_template("home.html", greeting="Hello " + session.get("name"))
 
 
 @app.route('/sales', methods=['GET', 'POST'])
-def sale_form():
+@login_required
+def sale():
     return render_template('sale.html')
 
 
 @app.route("/login", methods=['GET', 'POST'])
-def login_form():
+def login():
     email = ""
-    if request.method == "POST":
+    if request.method == 'POST':
         email = request.form.get('email')
         password = request.form.get('password')
         try:
-            for user in users:
-                if user["email"] == email and user["password"] == password:
-                    session['email'] = email
-                    session["name"] = user["name"]
-                    return redirect(url_for('home'))
-        except:
-            flash("Something went wrong while trying to login")
-        flash("Invalid credentials")
+            user = users.find_one({'email': email})
+            if user and pbk.verify(password, user['password']):
+                session['email'] = email
+                session['name'] = user['name']
+                return redirect(url_for('home'))
+            else:
+                flash('Invalid email or password. Please try again or sign up.')
+        except Exception as e:
+            flash('Error while trying to login: {}'.format(e))
     return render_template('login.html', email=email)
 
 
 @app.route("/mission", methods=['GET', 'POST'])
-def mission_form():
+@login_required
+def mission():
     return render_template('mission.html')
 
 
 @app.route("/blog")
-def blog_form():
+def blog():
     return render_template('blog.html')
 
 
@@ -63,13 +78,13 @@ def signup():
         name = request.form.get('name')
         email = request.form.get('email')
         password = request.form.get('password')
-        user_data = {"name": name, "email": email, "password": password}
-        users.append(user_data)
+        user_data = {"name": name, "email": email, "password": pbk.hash(password)}
+        users.insert_one(user_data)
         print(users)
         session['email'] = email
         session['name'] = name
         flash("Your account has been created successfully")
-        return redirect(url_for("login_form"))
+        return redirect(url_for("login"))
 
     return render_template('signup.html')
 

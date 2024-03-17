@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIME ORGANICS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+
+</head>
+<body>
+<header class="top">FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
+{% for message in get_flashed_messages() %}
+    <div class="alert">
+        <p>
+            {{ message }}
+        </p>
+    </div>
+{% endfor %}
+<nav class="top">
+    <ul class="top">
+        <img src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">
+        <li><a href="home">SHOP</a></li>
+        <li><a href="sales">SALES</a></li>
+        <li><a href="mission">MISSION</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="login">LOGIN/REGISTER</a></li>
+
+    </ul>
+</nav>

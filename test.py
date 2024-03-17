@@ -6,8 +6,6 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 app.secret_key = f"{secrets.token_urlsafe()}"
-client = MongoClient(os.environ.get("mongodb+srv://kimanihezekiah:<password>@cluster0.atrb87s.mongodb.net/"))
+client = MongoClient(os.environ.get("MONGO_URI"))
 
-users = client.users
-
-print(users)
+users = client.get_default_database("users")
