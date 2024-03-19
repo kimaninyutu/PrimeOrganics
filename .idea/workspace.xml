@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8276d86-cdd2-4ff6-ab99-bdbe1730be6d" name="Changes" comment="initial changes">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,7 @@
       <workItem from="1710686184989" duration="6940000" />
       <workItem from="1710712519853" duration="138000" />
       <workItem from="1710738061860" duration="3251000" />
-      <workItem from="1710842746000" duration="693000" />
+      <workItem from="1710842746000" duration="883000" />
     </task>
     <task id="LOCAL-00001" summary="initial changes">
       <option name="closed" value="true" />
