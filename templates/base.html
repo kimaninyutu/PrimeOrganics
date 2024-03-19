@@ -9,13 +9,7 @@
 </head>
 <body>
 <header class="top">FREE SHIPPING AROUND NAIROBI FOR ORDERS ABOVE Ksh.1000</header>
-{% for message in get_flashed_messages() %}
-    <div class="alert">
-        <p>
-            {{ message }}
-        </p>
-    </div>
-{% endfor %}
+
 <nav class="top">
     <ul class="top">
         <img src="{{ url_for('static', filename='images/14.PNG') }}" alt="Image">

@@ -44,33 +44,3 @@ window.addEventListener("scroll", function () {
     checkProductVisibility();
 });
 
-
-let cartItems = [];
-
-function updateCartDisplay() {
-    let cartItemsDiv = document.getElementById('cart-items');
-    cartItemsDiv.innerHTML = '';
-
-    cartItems.forEach(item => {
-        let itemDiv = document.createElement('div');
-        itemDiv.textContent = `${item.name} - Ksh ${item.price}`;
-        cartItemsDiv.appendChild(itemDiv);
-    });
-
-    let cartTotal = cartItems.reduce((total, item) => total + item.price, 0);
-    document.getElementById('cart-total').textContent = cartTotal;
-}
-
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', addToCart);
-});
-
-function addToCart(event) {
-    let productBlock = event.target.closest('.product-block');
-    let productName = productBlock.querySelector('h3').innerText;
-    let productPrice = parseFloat(productBlock.querySelector('.price').innerText.replace('Ksh ', ''));
-
-    cartItems.push({name: productName, price: productPrice});
-
-    updateCartDisplay();
-}
