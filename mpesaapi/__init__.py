@@ -6,7 +6,7 @@ import requests
 def initiate_session(phone_number, amount):
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 2jqJmg3J4BkHysS10yp7ngatGxC8'
+        'Authorization': 'Bearer drZNX04ghApzkrIsdi70XqXg2hK2'
     }
 
     payload = {
@@ -30,3 +30,6 @@ def initiate_session(phone_number, amount):
                                 headers=headers,
                                 data=payload_json)
     print(response.text.encode('utf8'))
+
+
+initiate_session(798296901, 1)
